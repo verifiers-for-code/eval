@@ -5,15 +5,15 @@
 ```
 Example:
 ```bash
-./run.sh phi_512 phi_512_planner "meta-llama/Meta-Llama-3B-Instruct"
+./run.sh phi_512 phi_512_planner "meta-llama/Meta-Llama-3-8B-Instruct"
 ```
-Here, it runs the model in `meta-llama/Meta-Llama-3B-Instruct` (codegen) with `phi_512` adapter (planner) and `phi_512_planner` subdir (the name you will see on leaderboard).
+Here, it runs the model in `meta-llama/Meta-Llama-3-8B-Instruct` (codegen) with `phi_512` adapter (planner) and `phi_512_planner` subdir (the name you will see on leaderboard).
 
 2. Using axolotl merge
 ```bash
-./run_ax.sh phi_512 phi_512_planner "meta-llama/Meta-Llama-3B-Instruct"
+./run_ax.sh phi_512 phi_512_planner "meta-llama/Meta-Llama-3-8B-Instruct"
 ```
-Here, it runs the model in `meta-llama/Meta-Llama-3B-Instruct` (codegen) with `phi_512` adapter (planner) and `phi_512_planner` subdir (the name you will see on leaderboard).
+Here, it runs the model in `meta-llama/Meta-Llama-3-8B-Instruct` (codegen) with `phi_512` adapter (planner) and `phi_512_planner` subdir (the name you will see on leaderboard).
 Where:
 ```bash
 # Define the config file path
@@ -31,6 +31,6 @@ MERGED_MODEL_PATH="${LORA_MODEL_DIR}/merged"
 
 # Visualize Only Mode
 ```bash
-python visualize_scores.py --model "Meta-Llama-3B-Instruct"
+python visualize_scores.py --model "Meta-Llama-3-8B-Instruct"
 ```
 This will showcase all the scores of the model in the `model` directory. Ex: if phi is codegen, then ```--model Phi-3-mini-4k-instruct```
